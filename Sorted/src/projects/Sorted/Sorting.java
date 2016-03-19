@@ -3,7 +3,7 @@ package projects.Sorted;
 /**
  * Created by Develop on 16.03.2016.
  */
-public abstract class AbstractSorted {
+public abstract class Sorting {
     public int[] myArray;
     public abstract void sortArray(int[] array);
 

@@ -3,7 +3,7 @@ package projects.Sorted;
 /**
  * Created by Develop on 16.03.2016.
  */
-public class BubbleSort extends AbstractSorted {
+public class BubbleSort extends Sorting {
     public int myArray[];
     @Override
     public void sortArray(int[] array) {

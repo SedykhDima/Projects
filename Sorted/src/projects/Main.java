@@ -1,9 +1,6 @@
 package projects;
 
-import projects.Sorted.AbstractSorted;
-import projects.Sorted.BubbleSort;
-import projects.Sorted.InsertSort;
-import projects.Sorted.SelectSort;
+import projects.Sorted.*;
 
 /**
  * Created by Develop on 16.03.2016.
@@ -18,6 +15,7 @@ public class Main {
         printInfoSort(new InsertSort());
         printInfoSort(new SelectSort());
         printInfoSort(new BubbleSort());
+        printInfoSort(new ShellSort());
     }
 
     public static void printResult(int[] array) {
@@ -26,10 +24,10 @@ public class Main {
         }
     }
 
-    public static void printInfoSort(AbstractSorted abstractSorted) {
-        abstractSorted.printTimeSorted(mas.clone());
-        abstractSorted.printComplexityOfAlgorithm();
-        printResult(abstractSorted.myArray);
+    public static void printInfoSort(Sorting sorting) {
+        sorting.printTimeSorted(mas.clone());
+        sorting.printComplexityOfAlgorithm();
+        printResult(sorting.myArray);
         System.out.println("\n");
     }
 

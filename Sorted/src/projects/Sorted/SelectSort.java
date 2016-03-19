@@ -3,7 +3,7 @@ package projects.Sorted;
 /**
  * Created by Develop on 16.03.2016.
  */
-public class SelectSort extends AbstractSorted {
+public class SelectSort extends Sorting {
     public int[] myArray;
     @Override
     public void sortArray(int[] array) {
